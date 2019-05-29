@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 27/05/2019 09:47
+  	Creation date: 29/05/2019 06:57
   	*/
 
 @font-face {
@@ -49,3 +49,4 @@ margin-left: 20px;
 .flaticon-lawyer:before { content: "\f110"; }
 .flaticon-calendar:before { content: "\f111"; }
 .flaticon-police-hand-cuffs-with-chain:before { content: "\f112"; }
+.flaticon-phone-receiver:before { content: "\f113"; }
