@@ -2,7 +2,7 @@
 /*================== Read More Text ==================*/
 
 $(function () {
-    var showChar = 260;
+    var showChar = 430;
     var moretext = "Read More +";
     var lesstext = "Read Less -";
     $('.comments-space').each(function () {
@@ -15,7 +15,7 @@ $(function () {
                 hide_content +
                 '</span>' +
 
-                '<a href="" class="morelink read-more mt-15" style="display:block;">' +
+                '<a href="" class="morelink read-text mt-15" style="display:block;">' +
                 moretext +
                 '</a>' + '</span>';;
 
@@ -65,8 +65,8 @@ $(function () {
 $(document).ready(function () {
 
     $('.loadMore').loadMoreResults({
-        displayedItems: 8,
-        showItems: 4
+        displayedItems: 9,
+        showItems: 3
     });
 
 
@@ -82,7 +82,7 @@ $(function () {
         nav: true,
         slideBy: 3,
         item: 3,
-        navText: ["<i> <img src='assets/Images/attr/slider-dot.png' class='arrow-img' /> </i>", "<i> <img src='assets/Images/attr/slider-dot.png' class='arrow-img' /> </i>"],
+        navText: ["<i class='flaticon-last-track-left-arrow'> </i>", "<i class='flaticon-right-arrow'> </i>"],
         responsiveClass: true,
         responsive: {
             0: {
@@ -131,13 +131,13 @@ $(function () {
         responsive: {
             0: {
                 items: 1,
-                dots: true,
-                nav: false
+                dots: false,
+                nav: true
             },
             400: {
                 items: 1,
-                dots: true,
-                nav: false
+                dots: false,
+                nav: true
             },
             600: {
                 items: 1,
@@ -169,11 +169,10 @@ $(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= 100) {
-            $("nav").addClass("nav-bg-color");
+            $("nav").addClass("nav-bg-color p-3");
 
         } else {
-
-            $("nav").removeClass("nav-bg-color");
+            $("nav").removeClass("nav-bg-color p-3");
 
 
         }
@@ -184,10 +183,10 @@ $(function () {
 
 /*===================== Another Load More Script ======================*/
 $(function () {
-    $(".no-display").slice(0, 4).show();
+    $(".no-display").slice(0, 9).show();
     $("#load-more").on('click', function (e) {
         e.preventDefault();
-        $(".no-display:hidden").slice(0, 2).slideDown();
+        $(".no-display:hidden").slice(0, 3).slideDown();
         if ($(".no-display:hidden").length == 0) {
             $("#load-more").fadeOut('slow');
 
