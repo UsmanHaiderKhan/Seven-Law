@@ -1,4 +1,4 @@
-﻿/*================================= 
+﻿/*=================================
         Font-Family's Start
   =================================*/
 @font-face {
@@ -36,7 +36,7 @@
     src: url('../../Fonts/Barlow-SemiBold.otf') format('opentype');
 }
 /*
-   
+
     font-family: 'Montserrat', sans-serif;
 
 */
@@ -49,7 +49,7 @@ html, body {
 }
 
 
-/*================================= 
+/*=================================
     Navbar Section Styling
   =================================*/
 #home {
@@ -143,7 +143,9 @@ html, body {
 
 
 #home .main-banner-desc {
-    font-size: 20px;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: .8px;
     color: #ffffff;
     font-family: 'Barlow-Light';
 }
@@ -229,6 +231,24 @@ html, body {
     margin-top: -10px;
 }
 
+    #bottom .media {
+        position: relative;
+    }
+
+        #bottom .media::after {
+            content: '';
+            position: absolute;
+            right: -6px;
+            top: -40px;
+            height: 174%;
+            width: 2px;
+            background-color: #151c32;
+        }
+
+    #bottom .media-body {
+        margin-top: 32px;
+    }
+
 .afters {
     position: relative;
 }
@@ -238,7 +258,7 @@ html, body {
         position: absolute;
         left: -60px;
         top: -41px;
-        height: 237%;
+        height: 174%;
         width: 2px;
         background-color: #151c32;
     }
@@ -260,25 +280,14 @@ html, body {
 
 #bottom [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-family: Flaticon;
-    font-size: 39px;
+    font-size: 73px;
     color: #fff;
     font-style: normal;
     margin-left: 0px;
+    filter: drop-shadow(0px 2px 0px black);
 }
 
-#bottom .media {
-    position: relative;
-}
 
-    #bottom .media::after {
-        content: '';
-        position: absolute;
-        right: 3px;
-        top: -40px;
-        height: 237%;
-        width: 2px;
-        background-color: #151c32;
-    }
 
 /*#bottom .media::before {
             content: '';
@@ -288,7 +297,7 @@ html, body {
             width: 2px;
             background-color: #151c32;
         }*/
-/*================================= 
+/*=================================
        Abuot Section Styling
   =================================*/
 #form {
@@ -416,7 +425,7 @@ html, body {
     font-family: 'Barlow-Medium';
     box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.75);
 }
-/*================================= 
+/*=================================
       Professional Section Styling
   =================================*/
 #professional {
@@ -447,6 +456,7 @@ html, body {
     background-color: rgb(0, 0, 0);
     box-shadow: 5px 8.66px 20px 0px rgba(21, 28, 50, 0.75);
 }
+
 
 .containing {
     position: relative;
@@ -485,6 +495,11 @@ html, body {
     -ms-transform: scale(1);
     transform: scale(1);
 }
+
+.containing:hover .img-border {
+    border: 3px solid rgb(21, 28, 50);
+}
+
 
 .text {
     color: white;
@@ -547,10 +562,14 @@ html, body {
     padding: 10px;
 }
 
+#professional .owl-carousel .owl-stage {
+    padding: 30px 0;
+}
+
 #professional .owl-theme .owl-nav [class*=owl-] {
     background: transparent;
 }
-/*================================= 
+/*=================================
        Blog Section Styling
   =================================*/
 
@@ -648,7 +667,7 @@ html, body {
     text-align: center;
     font-family: 'Barlow-Bold';
 }
-/*================================= 
+/*=================================
       Contact Section Styling
   =================================*/
 .contact-text {
@@ -770,7 +789,7 @@ html, body {
 
 
 
-/*================================= 
+/*=================================
           Read More Styling
   =================================*/
 .comments-space {
@@ -1556,7 +1575,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 993px) {
     #home .main-banner-text {
         font-size: 38px;
     }
@@ -1584,6 +1603,10 @@ button:focus {
     #bottom {
         padding: 10px 0 10px 0;
     }
+
+        #bottom [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+            font-size: 39px;
+        }
 
         #bottom .media-body {
             margin-top: 15px;
@@ -1667,7 +1690,7 @@ button:focus {
 @media screen and (max-width: 800px) {
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
     #home .main-banner-text {
         font-size: 38px;
     }
@@ -1694,6 +1717,10 @@ button:focus {
 
     #bottom .media::after {
         height: 186%;
+    }
+
+    #bottom [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 39px;
     }
 
     .media-form-mt {
